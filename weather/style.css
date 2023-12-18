@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Raleway:wght@500&family=Rubik:ital,wght@0,300;1,300&display=swap');
+
+* {
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, "Inter";
+}
+:root {
+  --white: #ffffff;
+  --off-white: #e5e5e5;
+  --transp-white-1: rgba(255, 255, 255, 0.25);
+  --blue-1: #62b8f5;
+  --blue-2: #4475ef;
+  --shadow: rgba(3, 46, 87, 0.2);
+}
+body {
+  height: 100vh;
+  background: linear-gradient(151deg, #8E2DE2 0%, #4A00E0 100%);
+}
+.wrapper {
+  font-size: 16px;
+  max-width: 448px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.container {
+  width: 100%;
+  padding: 48px 1.8em;
+  border-radius: 9px;
+  box-shadow: 0 1.8em 59px var(--shadow);
+  text-align: center;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 20px;
+}
+.search-container input, .search-container button {
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+.search-container input {
+  padding: 11px;
+  background-color: transparent;
+  border-bottom: 2px solid var(--transp-white-1);
+  color: white;
+  font-weight: 300;
+}
+.search-container input::placeholder {
+  color: var(--off-white);
+}
+.search-container input:focus {
+  border-color: var(--white);
+}
+.search-container button {
+  color: var(--blue-2);
+  background-color: var(--white);
+  border-radius: 5px;
+}
+#result h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.weather, .desc {
+  color: var(--off-white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.weather {
+  margin-top: -11px;
+}
+#result img {
+  margin: 10px 0 0 0;
+  filter: drop-shadow(0 29px 59px var(--shadow));
+}
+#result h1 {
+  font-size: 64px;
+  margin: 5px 0 11px 0;
+  line-height: 0;
+  font-weight: 400;
+  color: var(--white);
+}
+.temp-container {
+  display: flex;
+  justify-content: center;
+}
+.temp-container div {
+  padding: 5px 16px;
+}
+.temp-container div:first-child {
+  border-right: 1px solid var(--transp-white-1);
+}
+.temp-container .title {
+  font-weight: 600;
+  color: white;
+}
+.temp-container .temp {
+  font-weight: 300;
+  color: var(--off-white);
+}
+.msg {
+  margin-top: 29px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.with-by{
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Inter;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  position: absolute;
+  top: 900px;
+  left: 847px;
+  font-size: var(--lead-text-regular-size);
+}
+.weathers{
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: absolute;
+  top: 40px;
+  left: 865px;
+  font-size: 28px;
+  font-weight: 300;
+}
